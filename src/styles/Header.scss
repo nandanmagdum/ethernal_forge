@@ -1,0 +1,33 @@
+@import "./colors.scss";
+
+.header{
+    background-color: $first;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    > h1{
+        text-transform: uppercase;
+        padding: clamp(10px, 0.7rem, 1rem);
+        font-size: min(4vw, 3rem);
+    }
+    
+    
+    > nav{
+        padding-right: 1vw;
+        > #link{
+            font-size: min(3vw, 1.5rem);
+            padding-inline: 1vw;
+            text-decoration: none;
+            color: $dark;
+            &:hover{
+                color: $second;
+                cursor: pointer;
+            }
+        }
+    }
+}
